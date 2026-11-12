@@ -7,6 +7,9 @@ Companion code for the manuscript *"A calibrated spatial transcriptomics
 framework reveals a perineural stromal program in triple-negative breast
 cancer"*.
 
+Archived on Zenodo: [10.5281/zenodo.24165453](https://zenodo.org/records/24165453)
+(release v1.0.0).
+
 ## What it does
 
 1. **Nerve-associated spot calling** from 10x Visium data, using class-wise
