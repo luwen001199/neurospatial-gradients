@@ -1,0 +1,31 @@
+analysis,panel,metric,celltype,k,rho_mean,p,fdr_bh
+abundance~distance (partial Spearman),primary,rho_mean,CAF_myCAF,30,-0.07821813742706953,7.264366169746495e-52,4.358619701847897e-51
+abundance~distance (partial Spearman),primary,rho_mean,PVL,30,-0.023377092037892722,6.175579593003908e-06,9.263369389505862e-06
+abundance~distance (partial Spearman),primary,rho_mean,Myeloid,30,-0.020298187480308438,8.681552630444656e-05,0.00010417863156533588
+abundance~distance (partial Spearman),primary,rho_mean,Endothelial,30,-0.008001624685891122,0.1218687920499003,0.1218687920499003
+abundance~distance (partial Spearman),primary,rho_mean,Cancer Epithelial,30,0.04290661334887029,1.03956145518507e-16,2.07912291037014e-16
+abundance~distance (partial Spearman),primary,rho_mean,T-cells,30,0.06133904669516661,1.6251029570308346e-32,4.875308871092504e-32
+abundance~distance (partial Spearman),module-excluded,rho_mean,CAF_myCAF,30,-0.07677449845796074,5.0106997728498885e-50,3.006419863709933e-49
+abundance~distance (partial Spearman),module-excluded,rho_mean,Myeloid,30,-0.03671262072119001,1.2404046651675308e-12,2.4808093303350615e-12
+abundance~distance (partial Spearman),module-excluded,rho_mean,Endothelial,30,-0.016954519765703568,0.0010450466397161225,0.001254055967659347
+abundance~distance (partial Spearman),module-excluded,rho_mean,PVL,30,-0.0032155867475766415,0.5341605507454467,0.5341605507454467
+abundance~distance (partial Spearman),module-excluded,rho_mean,Cancer Epithelial,30,0.02569201665219649,6.761265341832794e-07,1.014189801274919e-06
+abundance~distance (partial Spearman),module-excluded,rho_mean,T-cells,30,0.061258383171454885,1.9593454389311158e-32,5.878036316793347e-32
+nerve vs non-nerve spots,primary,log2FC mean,CAF_myCAF,30,0.046413074588915894,1.1046231903271788e-25,3.7290906855784507e-25
+nerve vs non-nerve spots,primary,log2FC mean,Cancer Epithelial,30,-0.1952428282616333,1.2430302285261502e-25,3.7290906855784507e-25
+nerve vs non-nerve spots,primary,log2FC mean,Endothelial,30,-0.2801752115636845,3.086305866223901e-05,3.703567039468681e-05
+nerve vs non-nerve spots,primary,log2FC mean,Myeloid,30,0.01765047259787316,2.834689483241514e-09,4.2520342248622715e-09
+nerve vs non-nerve spots,primary,log2FC mean,PVL,27,-0.6777677035527467,0.07214159924679325,0.07214159924679325
+nerve vs non-nerve spots,primary,log2FC mean,T-cells,30,-0.44549533022378096,6.092944689673035e-16,1.218588937934607e-15
+module score ~ abundance,primary,rho vs neural-intrinsic,CAF_myCAF,30,0.12449081134705497,2.6263057799963507e-129,1.5757834679978104e-128
+module score ~ abundance,primary,rho vs neural-intrinsic,Cancer Epithelial,30,-0.07323166641369913,1.1645435849183914e-45,2.3290871698367828e-45
+module score ~ abundance,primary,rho vs neural-intrinsic,Endothelial,30,0.03057413871311652,3.3653992629747342e-09,4.038479115569681e-09
+module score ~ abundance,primary,rho vs neural-intrinsic,Myeloid,30,0.01020872073689762,0.04841499605087425,0.04841499605087426
+module score ~ abundance,primary,rho vs neural-intrinsic,PVL,30,0.04342403946452052,4.449703195341054e-17,6.674554793011581e-17
+module score ~ abundance,primary,rho vs neural-intrinsic,T-cells,30,-0.10913338726446063,1.3706392078243859e-99,4.111917623473158e-99
+module score ~ abundance,primary,rho vs perineural-stroma,CAF_myCAF,30,0.8730243309353445,0.0,0.0
+module score ~ abundance,primary,rho vs perineural-stroma,Cancer Epithelial,30,-0.6363325097168617,0.0,0.0
+module score ~ abundance,primary,rho vs perineural-stroma,Endothelial,30,0.03681296497301383,1.077537051947781e-12,1.077537051947781e-12
+module score ~ abundance,primary,rho vs perineural-stroma,Myeloid,30,0.18033917861831392,3.4000919633092333e-272,5.10013794496385e-272
+module score ~ abundance,primary,rho vs perineural-stroma,PVL,30,0.09160651831726034,1.4432941987025339e-70,1.7319530384430407e-70
+module score ~ abundance,primary,rho vs perineural-stroma,T-cells,30,-0.6336354184494581,0.0,0.0

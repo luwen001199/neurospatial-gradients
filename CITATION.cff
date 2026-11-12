@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "NeuroSpatialGradients: a calibrated spatial transcriptomics framework for the perineural microenvironment of triple-negative breast cancer"
+authors:
+  - family-names: "Lu"
+    given-names: "Wenliang"
+version: v1.0.0
+date-released: "2026-11-12"
+license: MIT
+repository-code: "https://github.com/luwen001199/neurospatial-gradients"
+abstract: >-
+  Quantifies the perineural microenvironment of triple-negative breast
+  cancer from public 10x Visium data, with a two-stage statistical
+  calibration (Moran spectral randomisation plus size-matched random
+  gene sets) that corrects the false-discovery inflation caused by
+  spatial autocorrelation and by gene-set size.
+keywords:
+  - spatial transcriptomics
+  - perineural invasion
+  - triple-negative breast cancer
+  - Moran spectral randomisation
+  - cancer-associated fibroblasts

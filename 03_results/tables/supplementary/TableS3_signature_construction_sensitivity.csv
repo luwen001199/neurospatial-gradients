@@ -1,0 +1,6 @@
+signature,definition,n_genes_up,n_genes_dn,n_genes_mapped,rho_CAF_ECM,var_explained_by_stroma,RFS_HR_score,OS_HR_score,OS_HR_score_resid,OS_P_score_resid,RFS_HR_score_resid
+NPP_primary,Primary: nominal P<0.05 and |mean rho|>=0.05 after rank-transform correction; projected on the merged target-gene + NPP matrix,84,4,88,0.526,0.3,1.07,1.1,1.139,8.3e-06,1.08
+NPP_msr_fdr,Genes surviving the MSR null at FDR<0.05 and |mean rho|>=0.05,67,1,68,0.476,0.253,1.0131,1.0232,1.0146,0.6306751951063069,1.0139
+NPP_msr_top50,50 most extreme up / 50 most extreme down genes by MSR Stouffer Z,44,7,51,0.709,0.508,0.9735,0.9666,0.9162,0.0035117927250123467,0.9417
+NPP_original_fixed_rank,Corrected rank transform; nominal P<0.05 and |mean rho|>=0.05 (primary),68,1,69,0.465,0.246,1.011,1.0211,1.0142,0.6402542456777427,1.0142
+NPP_pre_rankfix,Pre-correction rank transform (implementation error; retained for audit),93,5,98,0.716,0.51,0.9686,0.9674,0.9101,0.0013170593603387785,0.9218

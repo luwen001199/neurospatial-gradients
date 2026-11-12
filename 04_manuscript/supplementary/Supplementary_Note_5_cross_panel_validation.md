@@ -1,0 +1,11 @@
+# Supplementary Note 5 — Cross-panel validation of nerve-associated spot calls
+
+**Motivation.** The composite nerve score is computed from the same marker genes used to call nerve spots, so a high score in called spots is circular by construction. The question this note addresses is whether the calls are corroborated by markers **outside** the calling panel.
+
+**Design.** Two tests. (i) *Per-gene discrimination*: for each calling marker, the AUC separating called from non-called spots, per sample. (ii) *Cross-panel test*: for each sample, spots called exclusively by one neuronal class (sensory or structural — the only two classes with enough exclusive calls) are compared against all non-called spots for the mean *z*-score of the **other** classes' markers. The panel-crossing marker *UCHL1*, which appears in both the sensory and structural panels, is removed from all cross-panel read-outs. Empirical nulls from 200 label permutations per test.
+
+Source tables: `nerve_gene_level_auc.csv`, `nerve_crossvalidation_category.csv`, `nerve_crossvalidation_gene_cross.csv`. Figure: Supplementary Figure S4.
+
+**Results.** (i) Discrimination is carried almost entirely by five markers with appreciable tumour expression: *UCHL1* (median AUC 0.78; best single sample 0.93), *TUBB3* (0.66; best 0.91), *MAP2* (0.65; best 0.83), *S100B* (0.59) and *TRPV1* (0.59). The remaining markers, expressed at near-background levels in most spots, give AUC ≈ 0.5. (ii) The cross-panel test gives median AUC 0.47–0.52 across call categories (overall median 0.48, per-test range 0.23–0.73), and 6.8% of sample-level tests reach permutation *P* < 0.05 — the rate expected under the null.
+
+**Interpretation.** A nerve call that were anatomically correct should raise the markers of neuronal classes other than the one that made the call. It does not. Combined with Note 1 — where an independent axon/neuronal panel gives AUC 0.42–0.55 across the whole threshold grid — the evidence is consistent and negative: the calls identify a **transcriptionally defined perineural neighbourhood**, dominated by *UCHL1/TUBB3/MAP2* expression, and are not anatomically validated nerve detections. Multiplex protein imaging (PGP9.5, CGRP) with image registration is the required orthogonal validation, and no public TNBC Visium cohort provides it.

@@ -1,0 +1,28 @@
+test,setting,ari
+feature_jackknife,nerve_density_log,0.26
+feature_jackknife,nerve_sig_diff,0.522
+feature_jackknife,collagen_diff,0.628
+feature_jackknife,myCAF_diff,0.743
+feature_jackknife,CD8_diff,0.743
+feature_jackknife,TLS_diff,1.0
+feature_jackknife,IFN_diff,0.867
+feature_jackknife,b_median_log,0.19
+feature_jackknife,b_nsignal_log,0.26
+algorithm,ward (reference),1.0
+algorithm,average linkage,0.033
+algorithm,complete linkage,0.338
+algorithm,kmeans,0.628
+algorithm,GMM(full),0.005
+sample_bootstrap,80% x1000,0.681
+k_selection_seed,"seed=1,K=2",0.728
+k_selection_seed,"seed=1,K=3",0.656
+k_selection_seed,"seed=1,K=4",0.608
+k_selection_seed,"seed=7,K=2",0.73
+k_selection_seed,"seed=7,K=3",0.644
+k_selection_seed,"seed=7,K=4",0.608
+k_selection_seed,"seed=42,K=2",0.729
+k_selection_seed,"seed=42,K=3",0.669
+k_selection_seed,"seed=42,K=4",0.612
+k_selection_seed,"seed=2024,K=2",0.731
+k_selection_seed,"seed=2024,K=3",0.67
+k_selection_seed,"seed=2024,K=4",0.614

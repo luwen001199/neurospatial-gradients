@@ -1,0 +1,11 @@
+# Supplementary Note 2 — The housekeeping-gene artefact and why covariate adjustment is mandatory
+
+**Problem.** Spot-level Visium counts vary with local cellularity. If cellularity itself varies with distance from a nerve — which it does, because nerve bundles sit in stroma — then any gene whose expression simply tracks total RNA content will appear to have a "perineural gradient" without any biological specificity.
+
+**Design.** Within each sample we computed the Spearman correlation between every gene and distance to the nearest nerve source twice: unadjusted, and after projecting out the ranks of log-UMI count and mitochondrial fraction from both the gene ranks and the distance ranks (Gram–Schmidt orthogonalisation of the covariate block, then residualisation). Ranking makes the adjustment distribution-free; the partial correlation is then the correlation of the residuals.
+
+**Result.** Before adjustment the top of the ranking is dominated by housekeeping, ribosomal and mitochondrial transcripts (*ACTB, ACTG1, RPL/RPS* family, *MT-* genes, *B2M, HLA-A/B/C*) — precisely the genes whose expression is a proxy for how much RNA a spot captured. After adjustment this block collapses and the ranking is taken over by the biologically specific genes reported in the main text (*UCHL1, TUBA1A, TUBB3*, and the CAF/ECM module *SPARC, POSTN, CCN2, COL4A1, TAGLN, MMP9, LRRC15, THBS1*).
+
+**Consequence for the MSR calibration.** This matters beyond aesthetics. The genes removed by the Moran spectral randomisation null in the main analysis are, with very few exceptions, the same housekeeping and broad-coverage transcripts (*ACTB, ACTG1, RPL17/RPS15/RPS28, UBB, HLA-A/C, B2M*). That is the expected behaviour: those are the genes for which "any spatially smooth field would have been called significant" is the correct explanation. Had we not adjusted for cellularity first, the MSR null would have been asked to remove an artefact that a covariate adjustment removes more directly, and the two corrections would have been confounded with each other.
+
+**Note.** The primary signature was defined on adjusted statistics only (Methods 2.3). Gene-level statistics for all 10,503 testable genes, with and without the MSR calibration, are given in `TableS2_NPP_per_gene_statistics.csv` and `TableS5_MSR_per_gene_statistics.csv`.

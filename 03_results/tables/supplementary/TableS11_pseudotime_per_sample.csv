@@ -1,0 +1,2 @@
+n_samples,median_rho_dpt_dist,mean_rho_dpt_dist,frac_positive,mean_rho_partial,t_across_samples,p_across_samples,t_partial_across_samples,p_partial_across_samples,frac_root_is_nerve,frac_root_in_r1
+30,0.1601243787635514,0.14469385421487274,0.7666666666666667,0.17080883574588399,3.1427149285029823,0.0038396017552963855,4.050225223014592,0.00034900067710554446,1.0,1.0

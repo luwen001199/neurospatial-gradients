@@ -1,0 +1,26 @@
+# data & intermediates
+01_data/
+!01_data/raw/metabric/README.md
+
+# regenerable outputs (keep the supplementary tables cited in the manuscript)
+03_results/figures/*.png
+03_results/figures/*.pdf
+03_results/tables/*
+!03_results/tables/supplementary/
+!03_results/tables/msr_summary.fine.json
+
+# manuscript build artefacts
+04_manuscript/*.docx
+04_manuscript/*.pdf
+
+# python
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.log
